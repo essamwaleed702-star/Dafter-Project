@@ -1,92 +1,46 @@
-📒 Daftar — Task Manager API
+ Daftar — Task Manager API
 A full-featured Task Manager backend built with FastAPI, offering task management with due date support, image uploads, and AI-powered task planning.
-✨ Features
-🔐 Full JWT Authentication (Signup / Login / Protected Routes)
-✅ Complete task CRUD (Create, Read, Update, Delete)
-📅 Due Date support with dedicated endpoints for Overdue and Upcoming tasks
-🖼️ Image upload attached to tasks
-🤖 AI-Powered Task Planning — automatically suggests and organizes tasks using the Gemini API
-🗄️ Multi-database support (SQLite for development / PostgreSQL for production) via SQLAlchemy ORM
-🛠️ Tech Stack
-Technology
-Purpose
-FastAPI
-Backend framework
-SQLAlchemy
-ORM for database interaction
-Pydantic
-Data validation & schemas
-PostgreSQL / SQLite
-Database
-JWT (python-jose)
-Authentication & authorization
-Anthropic API
-AI task planning
 
-📂 Project Structure
-Code
-Approximate structure — update it to match your actual project layout.
-⚙️ Local Setup
-1. Clone the project
-Bash
-2. Create a virtual environment
-Bash
-3. Install dependencies
-Bash
-4. Set up environment variables
-Copy .env.example to .env and fill in the real values:
-Code
-5. Run the server
-Bash
-The server will run at: http://127.0.0.1:8000
-Interactive docs (Swagger UI): http://127.0.0.1:8000/docs
-📡 API Endpoints
-🔐 Authentication
-Method
-Endpoint
-Description
-POST
-/auth/signup
-Create a new account
-POST
-/auth/login
-Log in and receive a token
-✅ Tasks
-Method
-Endpoint
-Description
-GET
-/tasks/
-List all tasks
-POST
-/tasks/
-Create a new task
-GET
-/tasks/{id}
-Get a specific task
-PUT
-/tasks/{id}
-Update a task
-DELETE
-/tasks/{id}
-Delete a task
-GET
-/tasks/overdue
-Get overdue tasks
-GET
-/tasks/upcoming
-Get upcoming tasks
-POST
-/tasks/{id}/image
-Upload an image attached to a task
-🤖 AI Planning
-Method
-Endpoint
-Description
-POST
-/ai/plan
-Generate a smart task plan using AI
-Update this table to exactly match your actual routes.
+ 
+ Features
+ 
+ Full JWT Authentication (Register / Login / Protected Routes)
+<img width="883" height="237" alt="Screenshot 2026-07-09 133249" src="https://github.com/user-attachments/assets/62419eb7-9836-40ea-a842-9122c7909fb1" />
+
+ Complete task CRUD (Create, Read, Update, Delete) and
+ Due Date support with dedicated endpoints for Overdue and Upcoming tasks
+  <img width="1847" height="503" alt="Screenshot 2026-07-09 133550" src="https://github.com/user-attachments/assets/0795b8cb-28a5-4dee-8fbc-a4a5d06a7a95" />
+ 
+Helping Tools appears for all user and controlled by admin only.
+
+<img width="1818" height="413" alt="Screenshot 2026-07-09 133820" src="https://github.com/user-attachments/assets/e89ba00d-b3f8-40da-b0c1-a79241656a5b" />
+
+ AI-Powered Task Planning — automatically suggests and organizes tasks using the Gemini API
+ 
+<img width="1835" height="141" alt="Screenshot 2026-07-09 134107" src="https://github.com/user-attachments/assets/f24c85d8-e70c-4f73-9d86-87434646027c" />
+
+ 
+ Multi-database support (SQLite for development / PostgreSQL for production) via SQLAlchemy ORM
+ 
+Tech Stack -
+Technology -
+Purpose -
+FastAPI -
+Backend framework -
+SQLAlchemy -
+ORM for database interaction -
+Pydantic -
+Data validation & schemas -
+PostgreSQL / SQLite -
+Database -
+JWT (python-jwt) -
+Authentication & authorization -
+Gemini API -
+AI task planning -
+
+<img width="713" height="894" alt="photo_2026-07-09_13-48-28" src="https://github.com/user-attachments/assets/1f6c0ee8-26cd-42c6-b6dd-716a7a7f394d" />
+
+
 
 👤 Author
 Essam Waleed
